@@ -14,12 +14,16 @@ describe('Monitoramento Tabela NF-e com log e email', () => {
 
       const autorizador = $row.find('td').first().text().trim();
       const $img = $row.find('img');
-      const src = $img.attr('src');
+        const src = $img.attr('src') || '';
 
-      let status = 'desconhecido';
-      if (src.includes('verde')) status = 'verde';
-      else if (src.includes('amarelo')) status = 'amarelo';
-      else if (src.includes('vermelho')) status = 'vermelho';
+        let status = 'desconhecido';
+        if (src.includes('verde')) {
+            status = 'verde';
+        } else if (src.includes('amarelo')) {
+            status = 'amarelo';
+        } else if (src.includes('vermelho')) {
+            status = 'vermelho';
+        }
 
       autorizadores.push(autorizador);
       estadoAtual.push(status);
