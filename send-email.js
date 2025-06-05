@@ -15,8 +15,8 @@ module.exports = (params) => {
   });
 
   const mailOptions = {
-    from: '"Monitor NF-e" <seu-email@dominio.com>',
-    to: 'destinatario@empresa.com',
+    from: '"Monitor NF-e"lucas23quintela@gmail.com',
+    to: 'lucas.quintela@luizalabs.com',
     subject: `⚠️ Instabilidade detectada: ${autorizador}`,
     text: `Boa noite pessoal, tudo bem??\n\nPercebemos algumas instabilidades na SEFAZ ${autorizador}.\n\nHá alguma instabilidade detectada por vocês? Temos alguma previsão de normalizar os serviços?\nHá expectativa para ativação do ambiente de contingência?\n\nData e Hora da queda: ${dataHora}\n\nAtenciosamente.`,
     attachments: [
