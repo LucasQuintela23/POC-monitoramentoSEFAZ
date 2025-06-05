@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Automação Cypress para monitoramento da NF-e com alertas por email",
   "scripts": {
-    "test": "cypress run --spec 'cypress/e2e/monitoramento/monitoramento.cy.js'"
+      "test": "cypress run --spec 'cypress/e2e/sefaz/monitoramento.cy.js'"
   },
   "devDependencies": {
     "cypress": "^12.0.0",
