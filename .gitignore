@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Diretórios e arquivos de build temporários
+dist/
+build/
+.tmp/
+.temp/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de relatórios e resultados de testes
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Estado salvo e dados de testes
+cypress/fixtures/estadoAnterior.json
+cypress/fixtures/registrosQuedas.json
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Editor / IDE / OS
+.vscode/
+.idea/
+*.swp
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.development
+.env.production
+.env.test

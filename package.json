@@ -1,0 +1,12 @@
+{
+  "name": "monitoramento-nfe",
+  "version": "1.0.0",
+  "description": "Automação Cypress para monitoramento da NF-e com alertas por email",
+  "scripts": {
+    "test": "cypress run --spec 'cypress/e2e/monitoramento.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.0",
+    "nodemailer": "^6.9.4"
+  }
+}

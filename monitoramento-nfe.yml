@@ -1,0 +1,24 @@
+name: Monitoramento NF-e
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'
+  workflow_dispatch:
+
+jobs:
+  monitoramento:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install
+      - run: npm test
+      - name: Upload Relatórios
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-reports
+          path: cypress/screenshots
